@@ -10,8 +10,8 @@ def main():
     countries = ['AUS', 'BRA', 'CHN', 'GBR', 'USA']
 
     json_countries = get_countries(countries)
-    exchange_dict = populate_exchange_dict(json_countries)
-    exchange_dict = get_average_exchange_rate(exchange_dict, 5)
+    exchange_dict =  populate_exchange_dict(json_countries)
+    exchange_dict = get_average_exchange_rate(exchange_dict, 30)
     results_list = create_list(json_countries, exchange_dict)
 
     add_to_db(results_list)
